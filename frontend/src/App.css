@@ -1,0 +1,8 @@
+/* App.css */
+
+.content-container {
+ 
+  overflow-x: hidden;
+  display: flex;
+  margin-top: 18px;
+}
