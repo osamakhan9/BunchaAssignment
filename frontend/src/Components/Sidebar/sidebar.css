@@ -1,0 +1,49 @@
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  font-family: Mulish;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 140%;
+}
+
+.scrollbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  box-shadow: -1px 0px 0px 0px #f0f0f0 inset, 1px 0px 0px 0px #e8e8e8 inset;
+  overflow-y: scroll;
+  width: 290px;
+  height: 300px;
+  padding: 1px 3px 580px 4px;
+  border-radius: 4px;
+  text-align: center;
+ 
+}
+
+.product {
+  display: flex;
+  width: 180px;
+  padding: 10px 40px 10px 20px;
+  text-align: center;
+  gap: 20px;
+  border-radius: 100px;
+  transition: background-color 0.3s;
+  color: var(--neutral-gray, #737d94);
+
+ 
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 140%;
+}
+
+.product:hover {
+  background: #5da9e9;
+  cursor: pointer;
+  color: white;
+}
