@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "./Produce.css";
+import "./Style.css";
 import { useDispatch } from "react-redux";
 import { addToCart, removeFromCart } from "../../Redux/actions";
+
 
 const Listofproducts = ({ title }) => {
   const [iconState, setIconState] = useState({});
@@ -16,7 +17,7 @@ const Listofproducts = ({ title }) => {
 
   const [productData, setproductData] = useState([])
 
-  fetch('http://localhost:3001/data').then((res) => {
+  fetch('https://bunchabackend.onrender.com/data').then((res) => {
     return res.json();
   }).then((res) => {
     // console.log(res)
@@ -38,6 +39,9 @@ const Listofproducts = ({ title }) => {
   };
 
   return (
+
+    <>
+   
     <div className="produce">
       <div className="produce-title">
         <h1>{title}</h1>
@@ -78,6 +82,7 @@ const Listofproducts = ({ title }) => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
